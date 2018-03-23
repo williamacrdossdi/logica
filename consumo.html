@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Desafio</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var carroTanque = 40;
+			var carroAutonomia = 480;
+			var carroAutonomiaEtanol = 240;
+			var etanolPreco = 2.80;
+			var gasolinaPreco = 3.90;
+			var carroConsumo = carroAutonomia/carroTanque;
+			var carroConsumoEtanol = carroAutonomiaEtanol/carroTanque;
+			var gasolinaTanque = carroTanque * gasolinaPreco;
+			var etanolTanque = carroTanque * etanolPreco;
+
+			document.write("A autonomia do carro é de: <br>"+ carroConsumo + " km por litro de gasolina.  " + "O custo por tanque será R$" + gasolinaTanque + "<br><br>");
+			document.write("A autonomia do carro é de: <br>"+ carroConsumoEtanol + " km por litro de Etanol.  " + "O custo por tanque será R$" + etanolTanque);
+		</script>
+	</body>
+</html>

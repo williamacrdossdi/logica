@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Desafio</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var carroTanque = parseFloat(prompt("Informe o tamanho do tanque de combustível"));
+			var etanolPreco = parseFloat(prompt("Qual é o valor do Etanol"));
+			var gasolinaPreco = parseFloat(prompt("Qual é o valor da Gasolina"));;
+			var gasolinaTanque = carroTanque * gasolinaPreco;
+			var etanolTanque = carroTanque * etanolPreco;
+			var economia = gasolinaTanque - etanolTanque;
+			var economia2 = etanolTanque - gasolinaTanque;
+
+			document.write("O custo por tanque de Gasolina seráR$" + gasolinaTanque.toFixed(2) + "<br><br>");
+			document.write("O custo por tanque de Etanol será R$" + etanolTanque.toFixed(2));
+			document.write("<br> <br>")
+			
+			if(gasolinaTanque< etanolTanque)
+				{
+					document.write("A Gasolina compensa. A economia é de R$ "+ economia2);
+					}if(gasolinaTanque == etanolTanque){
+						document.write("Os Valores são iguais");
+						}else{
+							document.write("O Etanol compensa. A economia é de R$ "+ economia);};
+		</script>
+	</body>
+</html>
